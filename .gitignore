@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build
+dist/
+build/
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# OS
+Thumbs.db
+
+# Documentation - EXCLUDE ALL EXCEPT README_GITHUB.md
+00_READ_FIRST.txt
+QUICK_START.md
+SETUP.md
+SOLUTION_GUIDE.md
+POSTMAN_COLLECTION.md
+GIT_GUIDE.md
+INDEX.md
+FILES_SUMMARY.txt
+README.md
+*.txt
+*.bat
+*.MD
+
+# Misc
+.env
+.env.local
+*.log

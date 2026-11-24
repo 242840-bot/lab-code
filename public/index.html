@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Appointment System</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <span class="navbar-brand">🏥 Hospital Appointment System</span>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Book Appointment Form -->
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5>Book Appointment</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="appointmentForm">
+                            <div class="mb-3">
+                                <label for="patientName" class="form-label">Patient Name</label>
+                                <input type="text" class="form-control" id="patientName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="doctorId" class="form-label">Select Doctor</label>
+                                <select class="form-select" id="doctorId" required>
+                                    <option value="">Choose doctor...</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="appointmentDate" class="form-label">Date</label>
+                                <input type="date" class="form-control" id="appointmentDate" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="timeSlot" class="form-label">Time</label>
+                                <select class="form-select" id="timeSlot" required>
+                                    <option value="">Select time</option>
+                                    <option value="09:00">09:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="14:00">02:00 PM</option>
+                                    <option value="15:00">03:00 PM</option>
+                                    <option value="16:00">04:00 PM</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Book Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Appointments List -->
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h5>Appointments</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="appointmentsList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
